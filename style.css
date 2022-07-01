@@ -30,6 +30,7 @@ header, .content {
 }
 .color-blue { color: #2D9CDB; }
 .bg-grey6 { background-color: #F2F2F2;}
+.color-red { color: #EB5757; }
 
 .hero {
 	border-radius: 18px;
@@ -94,7 +95,7 @@ header, .content {
 	cursor: pointer;
 }
 
-#services {
+#services, #clients, .comment {
 	width: 80%;
 	margin: auto;
 	padding: 5% 0 5% 0;
@@ -211,6 +212,7 @@ footer {
 	padding: 2%;
 	flex-wrap: wrap;
 	color: #F2F2F2;
+	margin-top: 5%;
 }
 
 footer a {
@@ -257,6 +259,11 @@ footer #contact {
 }
 
 .reseau img { cursor: pointer; }
+
+.reseau {
+	display: flex;
+	gap: 10px;
+}
 
 .social h6 {
 	font-family: 'Heebo';
@@ -341,4 +348,77 @@ header nav ul {
 	line-height: 36px;
 	align-items: center;
 	justify-content: end;
+}
+
+#clients {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.pictures img {
+	border-radius: 24px;
+	display: block;
+}
+
+.info {
+	max-width: 400px;;
+}
+
+.pictures {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.picture1 { grid-area: 3 / 1 / 6 / 4; }
+.picture2 { grid-area: 2 / 4 / 4 / 7; }
+.picture3 { grid-area: 4 / 4 / 8 / 7; }
+
+.comment h3 {
+	max-width: 937px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 54px;
+	color: #333333;
+}
+
+.user-comment {
+	margin-top: 5%;
+	display: flex;
+	gap: 35px;
+}
+
+.user-comment img {
+	border-radius: 20px;
+	width: 80px;
+	height: 80px;
+	display: block;
+}
+
+.user-info h4 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.user-info p {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.user-info {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
