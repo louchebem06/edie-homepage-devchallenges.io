@@ -68,6 +68,7 @@ header, .content {
 	flex-direction: column;
 	row-gap: 30px;
 	max-width: 341px;
+	margin: 3% 2% 3% 2%;
 }
 
 .card h5 {
