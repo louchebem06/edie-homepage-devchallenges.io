@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
@@ -292,4 +293,52 @@ header {
 header nav ul {
 	display: flex;
 	gap: 50px;
+}
+
+.card-work h5 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 21px;
+	color: #828282;
+}
+
+.card-work p {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	color: #333333;
+}
+
+.card-work img {
+	display: block;
+	max-width: 545px;
+	height: auto;
+	border-radius: 12px;
+	margin-bottom: 10px;
+}
+
+.content-work {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.content-work .card-work:nth-of-type(2n - 1) { margin-top: 180px;}
+
+#our-works { padding: 5% 0 5% 0; }
+
+#our-works a {
+	display: flex;
+	text-decoration: none;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	align-items: center;
+	justify-content: end;
 }
