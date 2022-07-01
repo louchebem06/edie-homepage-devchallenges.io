@@ -2,21 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
 }
 
 header, .content {
 	max-width: 1400px;
 	margin: auto;
-	padding: 2%;
-}
-
-footer {
-	background-color: #100E1D;
-	width: 100%;
 	padding: 2%;
 }
 
@@ -153,7 +150,7 @@ h4 {
 	padding: 2% 0 2% 0;
 }
 
-.contact p {
+#contact p {
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 500;
@@ -162,7 +159,7 @@ h4 {
 	color: #828282;
 }
 
-.contact input::placeholder, .contact input {
+#contact input::placeholder, .contact input {
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 500;
@@ -170,8 +167,8 @@ h4 {
 	line-height: 27px;
 }
 
-.contact input::placeholder { color: #BDBDBD; }
-.contact input { color: #4F4F4F; }
+#contact input::placeholder { color: #BDBDBD; }
+#contact input { color: #4F4F4F; }
 
 .contact-bar {
 	border-radius: 12px;
@@ -195,6 +192,7 @@ h4 {
 	border-radius: 12px;
 	border: none;
 	cursor: pointer;
+	margin-right: 1%;
 }
 
 #our-works h4 { max-width: 448px; }
@@ -202,4 +200,96 @@ h4 {
 #our-works {
 	max-width: 80%;
 	margin: auto;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: #100E1D;
+	width: 100%;
+	padding: 2%;
+	flex-wrap: wrap;
+	color: #F2F2F2;
+}
+
+footer a {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #BDBDBD;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+footer nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+footer p:last-child {
+	width: 100%;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #BDBDBD;
+	text-align: center;
+}
+
+footer nav {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 200%;
+}
+
+footer #contact {
+	margin-bottom: 15%;
+}
+
+.reseau img { cursor: pointer; }
+
+.social h6 {
+	font-family: 'Heebo';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 53px;
+}
+
+header h1 {
+	font-family: 'Heebo';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 53px;
+	color: #333333;
+}
+
+header nav, header a{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	color: #333333;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav ul {
+	display: flex;
+	gap: 50px;
 }
