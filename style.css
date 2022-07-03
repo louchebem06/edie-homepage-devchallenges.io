@@ -298,11 +298,19 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 header nav ul {
 	display: flex;
 	gap: 50px;
+}
+
+header span {
+	position: absolute;
+	right: 0;
+	padding-right: 2%;
+	visibility: hidden;
 }
 
 .card-work h5 {
@@ -377,9 +385,21 @@ header nav ul {
 	grid-row-gap: 10px;
 }
 
-.picture1 { grid-area: 3 / 1 / 6 / 4; }
-.picture2 { grid-area: 2 / 4 / 4 / 7; }
-.picture3 { grid-area: 4 / 4 / 8 / 7; }
+.picture1 {
+	grid-area: 3 / 1 / 6 / 4;
+	display: block;
+	max-width: 100%;
+}
+.picture2 {
+	grid-area: 2 / 4 / 4 / 7;
+	display: block;
+	max-width: 100%;
+}
+.picture3 {
+	grid-area: 4 / 4 / 8 / 7;
+	display: block;
+	max-width: 100%;
+}
 
 .comment h3 {
 	max-width: 937px;
@@ -402,6 +422,7 @@ header nav ul {
 	width: 80px;
 	height: 80px;
 	display: block;
+	object-fit: contain;
 }
 
 .user-info h4 {
@@ -424,4 +445,102 @@ header nav ul {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
+}
+
+@media (max-width: 815px) {
+	header span {
+		visibility: visible;
+	}
+
+	header { overflow: visible; }
+
+	header nav ul {
+		position: absolute;
+		visibility: hidden;
+	}
+
+	.content-card {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.card {
+		padding: 10% 5% 10% 5%;
+	}
+
+	.content-work .card-work:nth-of-type(2n - 1) { margin-top: 0; }
+
+	#our-works h4 {
+		margin-bottom: 50px;
+	}
+
+	.content-work {
+		flex-direction: column;
+		gap: 50px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#our-works a {
+		float: left;
+		margin-top: 50px;
+	}
+
+	.card-work img {
+		display: block;
+		max-width: 100%;
+	}
+
+	#clients {
+		flex-direction: column;
+	}
+
+	footer {
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	footer nav, footer .social, footer #contact, footer p {
+		margin-left: 10%;
+	}
+
+	.around-hero h2 {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.around-hero h3 {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	.around-hero p {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	h4 {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	.info h3 {
+		font-size: 36px;
+		line-height: 54px;
+	}
+
+	.comment h3 {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	.contact-bar {
+		width: 80%;
+		max-width: 350px;
+	}
+
+	footer #contact p {
+		margin-left: 0;
+	}
 }
