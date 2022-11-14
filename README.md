@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://bryanledda.fr/devchallenge.io/homepage/homepage.html">
+    <a href="https://homepage.bryanledda.fr/">
       Demo
     </a>
     <span> | </span>
